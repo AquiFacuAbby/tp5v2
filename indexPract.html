@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="datos.php" method="post">
+        <fieldset>
+            <label for="Usuario"> NombreUsuario </label><br>
+            <input type="text" name="NombreUsuario" id="Usuario" required><br>
+            <label for="Contra">Contraseña</label><br>
+            <input type="password" name="pass" id="Contra" required><br>
+            <a href="https://socios.pagina12.com.ar/asociate">Link</a>
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label Educación></label><br>
+            <input type="radio" name="Educacion" value="Primaria" id="Prim" checked>
+            <label for="Prim">Primaria</label><br>
+            <input type="radio" name="Educacion" value="Secundaria" id="Sec">
+            <label for="Sec">Secundaria</label>
+            <input type="radio" name="Educacion" value="Terciario" id="Terc">
+            <label for="Terc">Terciario</label>
+            <label for="cv">Ingrese su CV</label>
+            <input type="file" name="archivo" id="cv">
+        </fieldset>
+        
+        <input type="checkbox" name="acuerdos" value="Acepta" id="acuerdos" checked>
+        <label for="acuerdos">Acepta los terminos y condiciones</label><br>
+        <input type="checkbox" name="email" value="Acepta" id="email" checked>
+        <label for="email">Desea recibir emails con promociones?</label><br>
+
+        <input type="reset" name="Borrar" value="Borrar datos">
+        <input type="submit" name="EnviarInfo" value="Enviar formulario">
+    </form>
+</body>
+</html>
